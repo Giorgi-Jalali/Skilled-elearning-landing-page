@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+  color: #83869a;
+  width: 375px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  margin: 0 auto;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Header and Footer Section */
+
+header {
+  height: 80px;
+}
+
+header,
+footer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+footer {
+  background-color: #13183f;
+  height: 120px;
+}
+
+.logo {
+  max-width: 89px;
+  max-height: 35px;
+  margin: 16px;
+}
+
+.head-started {
+  background-color: #13183f;
+}
+
+.head-started,
+.footer-started {
+  color: white;
+  width: 140px;
+  height: 48px;
+  font-weight: 700;
+  border-radius: 30px;
+  margin: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.footer-started {
+  background: linear-gradient(180deg, #4851ff 0%, #f02aa6 100%);
+}
+
+.head-started:hover {
+  background-color: #666ca3;
+}
+
+.footer-started:hover {
+  background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.5)
+    ),
+    linear-gradient(180deg, #4851ff -54.32%, #f02aa6 100%);
+}
+
+/* Main Section */
+
+.img-aside {
+  background-image: url('assets/image-hero-tablet.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 750px;
+  height: 650px;
+  display: none;
+}
+
+.h3-div {
+  padding: 16px;
+}
+
+h2 {
+  color: #13183f;
+  font-size: 40px;
+  line-height: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.get-started {
+  background: linear-gradient(180deg, #ff6f48 0%, #f02aa6 100%);
+  color: white;
+  width: 45%;
+  height: 55px;
+  font-weight: 700;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.get-started:hover {
+  cursor: pointer;
+  background: pink;
+}
+
+.img-div {
+  background-image: url('assets/image-hero-mobile.png');
+  background-position: center;
+  background-size: cover;
+  max-width: 100%;
+  height: 360px;
+}
+
+/* Topics Section */
+
+.main-topics {
+  max-width: 100%;
+  margin: 16px;
+  display: grid;
+}
+
+.check-courses {
+  background-image: linear-gradient(180deg, #ff6f48 0%, #f02aa6 100%);
+  height: 120px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.courses-paragraph {
+  color: white;
+  width: 76%;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+}
+
+.info-divs {
+  margin: 16px 28px;
+}
+
+h3 {
+  color: #13183f;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 25px;
+}
+
+span {
+  color: #f74780;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 28px;
+}
+
+span:hover {
+  color: #ffa7c3;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 770px) {
+  body {
+    background: linear-gradient(180deg, #ffffff 0%, #f0f1ff 100%);
+    width: 770px;
+  }
+
+  /* Main Section */
+
+  .img-div {
+    display: none;
+  }
+
+  .main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+
+  .img-aside {
+    display: block;
+    max-width: 100%;
+    margin-right: -400px;
+    margin-top: -140px;
+  }
+
+  /* Topics Section */
+
+  .main-topics {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 11px;
+    row-gap: 56px;
+  }
+
+  .check-courses {
+    height: 260px;
+  }
+
+  .info-divs {
+    background-color: white;
+    border-radius: 10px;
+    padding: 16px;
+    margin: 0 0;
+  }
+
+  .info-divs > img {
+    margin-top: -56px;
+    margin-right: -32px;
+  }
+
+  .courses-paragraph {
+    margin-top: -30px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  body {
+    width: 1440px;
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  /* Header and Footer Section */
+
+  .head-started,
+  .footer-started,
+  .logo {
+    margin: 24px 165px;
+  }
+
+  .logo {
+    max-width: 100%;
+  }
+
+  .head-started,
+  .footer-started {
+    width: 167px;
+    height: 56px;
+  }
+
+  h2 {
+    font-size: 56px;
+    line-height: 71px;
+  }
+
+  /* Main Section */
+
+  .main {
+    grid-template-columns: 1.8fr 1.2fr;
+  }
+
+  .img-aside {
+    background-image: url('assets/image-hero-desktop.png');
+    width: 950px;
+    height: 750px;
+    margin-right: -400px;
+    margin-top: -190px;
+  }
+
+  /* Topics Section */
+
+  .main-topics {
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 30px;
+    row-gap: 80px;
+  }
+
+  .main-div {
+    display: flex;
+    align-items: center;
+  }
+
+  .h3-div {
+    max-width: 50%;
+    padding: 0;
+    margin-left: 165px;
+  }
+
+  .main-topics {
+    margin: 165px;
+  }
+}
