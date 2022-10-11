@@ -21,7 +21,7 @@ This is a solution to the [Skilled e-learning landing page challenge on Frontend
 ### Links
 
 - Solution URL: [GitHub](https://github.com/Giorgi-Jalali/Skilled-elearning-landing-page)
-- Live Site URL: [GitHub Pages](https://Giorgi-Jalali.github.io/Skilled-elearning-landing-page)
+- Live Site URL: [GitHub Pages](https://Giorgi-Jalali.github.io/skilled-elearning-landing-page)
 
 ## My process
 
